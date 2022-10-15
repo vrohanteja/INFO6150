@@ -1,0 +1,42 @@
+/* .body{
+    background-image: url(./styles/image1.jpeg);
+    width: 20px;
+} */
+/* .carousel-inner img{
+    width: auto;
+    height: 245px;
+    max-height: 245px;
+    margin: auto; 
+    display: block;
+    align-content: center;
+    
+    } */
+#bread {
+    padding-left: 1000px;
+    /* text-align: right;
+        position:absolute; */
+}
+
+#image {
+    width: 100%;
+    height: 420px;
+    /* padding-left: 50px; */
+    text-align: center;
+
+}
+
+/* 
+For the events height based on screen width media queries
+*/
+
+@media screen and (max-width: 1080px) {
+    .d-block{
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .d-block{
+        height: 50vh;
+    }
+}
