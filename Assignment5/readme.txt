@@ -6,12 +6,13 @@ Bootstrap components used:
 - Carousel, to slide show multiple images  
 - Dropdowns, used in the Navigation tab to display the events and movie languages.
 - Navbar, to show various kind of bookings available on the website.
--
+- OffCanvas, to build a hidden sidebar that opens for movie ticket selection.
+- Tooltip, 
 
 
 Team:
-- Sishwa Thoka
 - Rohan Teja Veeramachaneni
+- Sishwa Thoka
 - Sahithi Reddy Marapadaga
 - Varun Vuppala
 - Diksha Bhatia

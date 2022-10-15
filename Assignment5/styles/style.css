@@ -1,5 +1,5 @@
 /* .body{
-    background-image: url(./styles/image1.jpeg);
+    background-image: url(image1.jpeg);
     width: 20px;
 } */
 /* .carousel-inner img{
@@ -11,19 +11,29 @@
     align-content: center;
     
     } */
-#bread {
-    padding-left: 1000px;
-    /* text-align: right;
+    #bread{
+        padding-left: 1000px;   
+        /* text-align: right;
         position:absolute; */
-}
+    }
+    #image{
+        width: 100%;
+        height: 420px;
+        /* padding-left: 50px; */
+        text-align: center;
 
-#image {
-    width: 100%;
-    height: 420px;
-    /* padding-left: 50px; */
-    text-align: center;
+    }
+    /* #card{
+        width: 10%; 
+        height: 100px;
+        resize: both;
+        overflow: auto;
+    }
+    #avatar{
+        width: 50%;
+        height: 200px;
+    } */
 
-}
 
 /* 
 For the events height based on screen width media queries
