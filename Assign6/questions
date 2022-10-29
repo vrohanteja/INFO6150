@@ -1,0 +1,23 @@
+Part A: To be used only JQuery and Arrow Function to Design a Simple Calculator Web Application.
+
+
+1) It should have 2 pages. On-Page one, Provide Three fields: Email, User Name, Password
+2) Three Fields should be validated properly. Including Null checks, Special Characters Check, Length Checks, etc. Display a proper error message respectively. (Should not be a generic one). - Done
+3) Email should accept only northeastern mail id. All the validations should be done Using Jquery. - Done
+4) If Validations were successful, then redirect to a second page. - Done
+5) On Second Page, Display the logged-in user name.
+6) Second Page will have 3 text fields for user input. And it should have four buttons: “Add, Subtract, Multiply and Divide”. On Clicking of the respective buttons, it needs to show the appropriate result either in label/Textfield. The result Should not be editable.
+7) The 3 text fields also need to be validated and display an error message. (should allow only numbers)
+8) All four operations need to be done using Only One Arrow Function.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+Part B: Async/Await/Promises/Set Interval/Clear Interval to be used to Design a Simple Stop Watch Web Application.
+
+
+1) It is a Single Page Application. It should have one Text Field/Label and Three Buttons. - Done
+2) Text Field/Label Should not be editable. It should display the Time in "HH:MM:SS" format. Initially, it should display 00:00:00. - Done
+3) Three Buttons are “Start, Stop and Reset”. On Click of Start, Time should start running. On Click of Stop, time should be Paused. On Click of Reset. Time to be reset to 00:00:00 - Done
+
+----------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,41 @@
+/* Common styling */
+
+#form1 {
+    text-align: center;
+}
+
+#mainWrapper {
+    padding: 1vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    background: #fff;
+    padding: 45px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.inputFields {
+    padding: 5px;
+    margin-bottom: 30px;
+    width: 55%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #999;
+}
+
+.inputLabels{
+    font-size: 1.2em;
+}
+
+.errorMsgs {
+    display: none;
+    color: red;
+}
+
+/* Screen specific styling */

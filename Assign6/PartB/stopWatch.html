@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title> Stopwatch </title>
+</head>
+<body>
+
+    <h1>Stopwatch </h1>
+
+	<div id="main">
+		<div>
+			<h2 style="color:black" id="cur_time">0</h2>
+		</div>
+
+		<div id="button_wrap">
+			<button id="startToggle" onclick="startToggle()"><img class="icon" src="./images/play.jpg"></button>
+            <button id="Stop" onclick="stop()"><img class="icon" src="./images/stop.jpg"></button>
+			<button id="reset" onclick="reset_time()"><img class="icon" src="./images/reset.jpg"></button>
+		</div>
+	</div>
+
+    <script src="./myScriptB.js"></script>
+</body>
+
+</html>

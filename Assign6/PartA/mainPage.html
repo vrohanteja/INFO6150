@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styleSmallDevices.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="./styleMedLgDevices.css" media="screen and (min-width: 769px)">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title> Login </title>
+</head>
+
+<body>
+    <div id="mainWrapper">
+        <form id="form1" method="post">
+            <label for="uName" class="inputLabels"> Username:</label><br>
+            <input required type="text" class="inputFields" id="uName" name="uName">
+            <div class="errorMsgs" id="uNameErr"> Invalid username, please enter a valid 8-16 alphabet username</div><br>
+            
+
+            <label for="emailId" class="inputLabels">Email:</label><br>
+            <input required type="text" class="inputFields" id="emailId" name="emailId">
+            <div class="errorMsgs" id="emailIdErr"> Invalid email, please use a valid northeastern email id</div><br>
+
+            <label for="pass" class="inputLabels">Password:</label><br>
+            <input required type="text" class="inputFields" id="pass" name="pass">
+            <div class="errorMsgs" id="passErr"> Please recheck, and enter a valid 8-16 alpha numeric password</div><br>
+
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <script src="./myScriptA.js"></script>
+</body>
+
+</html>

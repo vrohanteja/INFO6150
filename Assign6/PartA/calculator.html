@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title> Calculator </title>
+</head>
+
+<body>
+    <header>
+        <h2 id="headerText"></h3><br>
+    </header>
+        <section>
+            <div id="container1" style="background-color: rgb(189, 201, 233); width: 50vw; text-align: center; margin: auto; padding: 5vmin; box-shadow: 5px 5px 15px;">
+    
+                <h2 style="font-size: 2em;"> Calculator</h1>
+
+                <label style="font-size: 1.1em;">Number 1: &nbsp; </label>
+                <input type="text" id="a" name="option" onblur="validateInputs(this, 1, 'in1')" />
+                <br>
+                <div id="errorMsgin1" style="display: none; color:red;">
+                    Please enter numbers only!
+                    <br> 
+                </div>
+    
+                <br><br>
+                <label style="font-size: 1.1em;">Number 2: &nbsp; </label>
+                <input type="text" id="b" name="task" onblur="validateInputs(this, 2, 'in2')" />
+                <div id="errorMsgin2" style="display: none; color:red;">
+                    Please enter numbers only!
+                    <br> 
+                </div>
+    
+                <br><br>
+    
+                <input id="submitadd" type="button" value="ADD (+)" style="width: 80px; height: 25px; margin:10px;">
+                <input id="submitSubtract" type="button" value="SUB (-)" style="width: 80px; height: 25px; margin:10px;">
+                <br>
+                <input id="submitMultiply" type="button" value="MUL (x)" style="width: 80px; height: 25px; margin:10px;">
+                <input id="submitDivide" type="button" value="DIV (/)" style="width: 80px; height: 25px; margin:10px;">
+    
+              
+                <br><br>
+                <label style="font-size: 1.1em;">Result: &nbsp; &nbsp; </label>
+                <input type="text" readonly id="result">
+            </div>
+        </section>
+        <script>
+            $(document).ready(function () {
+                var username = window.sessionStorage.getItem("username");
+                // If page is directly accessed
+                if(username == null){
+                    username = "to the 2-number calculator!";
+                }
+                console.log(username);
+                $("#headerText").html("Welcome " + username); 
+                $("#submitadd").on("click", function () {
+                    var a = parseInt($('#a').val());
+                    var b = parseInt($('#b').val());
+                    var sum = (a, b) => (a + b);
+    
+    
+                    $("#result").val(a + b);
+                });
+    
+                $("#submitSubtract").on("click", function () {
+                    var a = parseInt($('#a').val());
+                    var b = parseInt($('#b').val());
+                    var sum = (a, b) => (a - b);
+                    $("#result").val(a - b);
+    
+                });
+    
+                $("#submitMultiply").on("click", function () {
+                    var a = parseInt($('#a').val());
+                    var b = parseInt($('#b').val());
+                    var sum = (a, b) => (a * b);
+                    $("#result").val(a * b);
+    
+                });
+    
+                $("#submitDivide").on("click", function () {
+                    var a = parseInt($('#a').val());
+                    var b = parseInt($('#b').val());
+                    var sum = (a, b) => (a / b);
+                    $("#result").val(a / b);
+    
+                });
+            });
+    
+            // Validation for numbers only
+            function validateInputs(object, type, nameType) {
+                var pattern = /^[0-9]+$/;
+                var name = "errorMsg" + nameType;
+                switch (type) {
+                    case 1:
+                        if (!object.value.trim().match(pattern)) {
+                            object.style.border = "2px solid red";
+                            document.getElementById(name).style.display = "block";
+                            object.value = "";
+                        }
+                        else {
+                            object.style.border = "";
+                            document.getElementById(name).style.display = "none";
+                        }
+                        break;
+    
+                    case 2:
+                        if (!object.value.trim().match(pattern)) {
+                            object.style.border = "2px solid red";
+                            document.getElementById(name).style.display = "block";
+                            object.value = "";
+                        }
+                        else {
+                            object.style.border = "";
+                            document.getElementById(name).style.display = "none";
+                        }
+                        break;
+                }
+            }
+    
+        </script>
+
+    </body>
+
+</html>
