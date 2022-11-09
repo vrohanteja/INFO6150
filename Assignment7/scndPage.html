@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/scndStyle.css">
+    <title> CHIPS </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 180px;
+            border-radius: 50px;
+        }
+ 
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+ 
+        .firstsection {
+            height: 150px;
+        }
+ 
+        .secondsection {
+            height: 150px;
+        }
+ 
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+ 
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+ 
+        .secondhalf {
+            width: 30%;
+        }
+ 
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+ 
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+ 
+        .text-small {
+            font-size: 18px;
+        }
+ 
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+ 
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+ 
+        .section {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+ 
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+ 
+        .paras {
+            padding: 0px 65px;
+        }
+ 
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+ 
+        .center {
+            text-align: center;
+        }
+ 
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="font-size: 2.8em; text-align: center;">
+        Supposed to be about chips, but let's just make the page a display of the remaining SCSS features.
+    </h1>
+    <nav>
+        <ul>
+          <li><a href="#web">HTML</a></li>
+          <li><a href="#program">CSS</a></li>
+          <li><a href="#SCSSSASS">SASS</a></li>
+        </ul>
+      </nav>
+
+      <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">
+                    HTML
+                </h1>
+                 
+                <p id="htmlTxt" style="font-size: 1.1em;">
+                    HTML stands for HyperText Markup
+                    Language. It is used to design
+                    web pages using a markup language.
+                    HTML is the combination of Hypertext
+                    and Markup language. Hypertext
+                    defines the link between the web
+                    pages. A markup language is used
+                    to define the text document within
+                    tag which defines the structure of
+                    web pages. HTML is a markup language
+                    that is used by the browser to
+                    manipulate text, images, and other
+                    content to display it in the required
+                    format.
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="secondHalf">
+                <h1 class="text-big" id="program">
+                    CSS
+                </h1>
+                <p id="cssTxt" style="font-size: 1.1em;">
+                    Cascading Style Sheets is a rule based language for specifying how documents are presented to users — how they are styled, laid out, etc. CSS can be used for very basic document text styling — for example, for changing the color and size of headings and links. It can be used to create a layout — for example, turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation.
+                </p>
+ 
+            </div>
+        </div>
+    </section>
+ 
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big" id="SCSSSASS"> SCSS/SASS </h1>
+ 
+            <p class="sectionSubTag text-small" id="scssTxt">
+                Officially described as “CSS with superpowers,” SCSS (or Sass) offers a way to write styles for websites with more enhanced CSS syntax. In general, browsers do not know how to process SCSS features, such as functions, mixins, and nesting. We’ll need to convert them to regular CSS files to run them in the browser. SCSS and Sass are two syntax flavors for the same concept. The difference between them is UI. We basically use either when CSS is inadequate to meet our UI requirements.
+            </p>
+ 
+        </div>
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+// Nesting
+nav {
+    width: 30vw;
+    margin-left: 35vw;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 10vh;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        padding: 26px 30px;
+        font-size: x-large;
+        text-decoration: none;
+        color: rgb(45, 8, 8);
+        text-shadow: 1px 1px #2a1f77;
+    }
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: rgb(13, 65, 66);
+    }
+    a:hover {
+        color: rgb(79, 153, 141);
+    }
+}
+
+// Mixin and interpolation
+@mixin interpolation($changeable, $val, $val2, $prop1, $prop2) {
+    background-#{$changeable}: $val;
+    position: $val2;
+    #{$prop1}: 0px;
+    #{$prop2}: 0px;
+}
+
+body {
+    @include interpolation("image", url("../rss/bgrScnd.jpg"), absolute, top, right);
+}
+
+// Initialize function data
+$font-weights: (
+    "light1": 300,
+    "bold1": 700,
+    "notWeight": rgb(45, 14, 122),
+);
+
+// Mapping the font weight data to corresponding variable using @function
+// map-get(map, key)	Returns the value for the specified key in the map.
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+#htmlTxt {
+    font-weight: weight(light1);
+}
+#cssTxt {
+    font-weight: weight(bold1);
+}
+#scssTxt {
+    color: weight(notWeight);
+}

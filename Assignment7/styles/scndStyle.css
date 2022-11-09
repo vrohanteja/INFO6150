@@ -1,0 +1,49 @@
+nav {
+  width: 30vw;
+  margin-left: 35vw;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  height: 10vh;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  padding: 26px 30px;
+  font-size: x-large;
+  text-decoration: none;
+  color: rgb(45, 8, 8);
+  text-shadow: 1px 1px #2a1f77;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: rgb(13, 65, 66);
+}
+nav a:hover {
+  color: rgb(79, 153, 141);
+}
+
+body {
+  background-image: url("../rss/bgrScnd.jpg");
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#htmlTxt {
+  font-weight: 300;
+}
+
+#cssTxt {
+  font-weight: 700;
+}
+
+#scssTxt {
+  color: rgb(45, 14, 122);
+}/*# sourceMappingURL=scndStyle.css.map */
