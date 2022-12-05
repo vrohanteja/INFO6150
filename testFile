@@ -2,3 +2,5 @@ Just to run tests
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 --global is optional
+
+// Due to the error whenever i try to push my assignments, had to unstage old commits before pushing just the image. This started occuring after fixing my github error.
