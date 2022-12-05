@@ -1,1 +1,4 @@
 Just to run tests
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+--global is optional
